@@ -10,4 +10,4 @@
 
 В корне проекта есть видео-preview, оно по качеству лучше, чем гифка ниже :)
 
-![Preview]([https://github.com/bandimaf/3D-js/blob/main/preview/video-2.gif](https://github.com/bandimaf/degital-agency/blob/main/preview.gif))
+![Preview](https://github.com/bandimaf/degital-agency/blob/main/preview.gif)
