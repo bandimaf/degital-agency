@@ -1,0 +1,41 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 83px;
+        height: 83px;
+        background-color: @deep_blue;
+        border-radius: 100%;
+    }
+
+    &__icon--w80 {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__icon-img {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__label {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 150%;
+
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%;
+        color: #707273;
+    }
+}

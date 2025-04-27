@@ -1,0 +1,122 @@
+.greeting {
+    background-color: #F3FEFF;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 41px 120px 152px;
+        padding-bottom: 90px;
+
+        @media (max-width: 1439px) {
+            flex-direction: column;
+            margin: 0 auto 152px;
+        }
+    }
+
+    &__text-area {
+        position: relative;
+        max-width: 510px;
+        z-index: 10;
+        @media (max-width: 1439px) {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+    }
+
+    &__btn {
+        margin-top: 30px;
+        font-size: 21px;
+    }
+
+    &__picture {
+        position: relative;
+        height: 570px;
+        width: 735px;
+        z-index: 5;
+    }
+
+    &__background-art {
+        position: absolute;
+        top: -190px;
+        left: 0;
+        width: 882px;
+        height: 808px;
+        transform: translate(-62px, 15px);
+        z-index: -5;
+        color: @deep_blue;
+    }
+
+    &__icon {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        z-index: 100;
+        box-shadow: 0 8px 16px 0 rgba(197, 200, 201, 0.15);
+
+        &--tl {
+            top: 26px;
+            left: 83px;
+            width: 102px;
+            height: 102px;
+        }
+
+        &--tr {
+            top: 31px;
+            right: 26px;
+            width: 112px;
+            height: 112px;
+        }
+
+        &--bl {
+            left: 51px;
+            bottom: 16px;
+            width: 96px;
+            height: 114px;
+        }
+
+        &--br {
+            bottom: 59px;
+            right: 66px;
+            width: 94px;
+            height: 92px;
+        }
+    }
+
+    &__icon-img {
+        box-sizing: border-box;
+        width: 50%;
+
+        &--rotate {
+            width: 50px;
+            height: 50px;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        transform: translate(43%, 0);
+        height: 110.6%;
+        object-fit:cover;
+    }
+
+    &__substrate {
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%, 0);
+        width: 493px;
+        height: 432.5px;
+        color: @blue;
+        z-index: -1;
+    }
+}

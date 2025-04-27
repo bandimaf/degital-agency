@@ -1,0 +1,122 @@
+.clients {
+    &__container {
+        margin: 120px 153px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 1116px) {
+            flex-direction: column-reverse;
+            gap: 30px;
+            margin-top: 60px;
+        }
+    }
+
+    &__text-area {
+        max-width: 449px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+    &__description {
+        margin-bottom: 35px;
+    }
+
+    &__picture {
+        width: 392.9px;
+        height: 392.9px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__elipces{
+        position: relative;
+        z-index: -100;
+        width: 387.94px;
+        height: 387.94px;
+        border: 5px solid @blue;
+        border-radius: 100%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -100;
+            width: 308.47px;
+            height: 308.47px;
+            border: 5px solid @blue;
+            border-radius: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -100;
+            width: 242px;
+            height: 242px;
+            border: 5px solid @blue;
+            border-radius: 100%;
+        }
+    }
+
+    &__img-cover {
+        box-sizing: border-box;
+        position: absolute;
+        overflow: hidden;
+        width: 58px;
+        height: 58px;
+        border-radius: 100px;
+        border: 1.5px solid rgba(255, 255, 255, 1);
+
+        &--w195 {
+            top: 25%;
+            left: 25%;
+            width: 195px;
+            height: 195px;
+        }
+
+        &--tl {
+            bottom: 304.94px;
+            left: 29.47px;
+        }
+
+        &--tr {
+            bottom: 304.94px;
+            right: 29.47px;
+        }
+        &--br {
+            bottom: 74.47px;
+            left: 337.47px;
+        }
+
+        &--bm {
+            top: 100%;
+            transform: translate(0, -50%);
+        }
+        
+        &--bl {
+            bottom: 74.47px;
+            right: 337.47px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 120%;
+        object-fit: contain;
+    }
+}

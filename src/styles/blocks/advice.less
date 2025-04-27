@@ -1,0 +1,66 @@
+.advice {
+    background-color: @light_blue;
+    background-image: url(/assets/images/rain-max.svg);
+
+    &__container {
+        padding: 100px 194px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo {
+        margin-bottom: 40px;
+        width: 154.2px;
+        height: 30.9px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 140%;
+        text-align: center;
+        color: #4B4C4C;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__img-cover {
+        position: relative;
+        overflow: hidden;
+        width: 58px;
+        height: 58px;
+        border-radius: 100px;
+    }
+
+    &__profile-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__profile-name {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 80%;
+        color: #4B4C4C;
+    }
+
+    &__profile-position {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        color: #707273;
+    }
+}
